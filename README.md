@@ -13,7 +13,7 @@
 5. 同一个符号垂直和水平三个一样的一条直线，就是最后的胜利者
 
 
-[游戏页面](https://github.com/rayeric/vue-game/public/images/game.png)
+[游戏页面](https://github.com/rayeric/vue-game/blob/master/public/images/game.png)
 
 ## Project setup
 ```
