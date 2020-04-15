@@ -1,6 +1,6 @@
 # vue-game
 
-## Project 
+## Project Resume
 
 这是面试公司给的面试题，制作一款`画圈`游戏。
 
