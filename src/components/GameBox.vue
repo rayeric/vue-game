@@ -22,9 +22,9 @@ export default {
     return {};
   },
   methods: {
-      handleSelect(i) {
-          this.$emit('handleSelect', i)
-      }
+    handleSelect(i) {
+      this.$emit("handleSelect", i);
+    }
   }
 };
 </script>
@@ -35,7 +35,6 @@ export default {
   height: 300px;
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px solid #000; */
   box-sizing: border-box;
   padding: 0;
 }
@@ -43,11 +42,14 @@ export default {
 .game-box-item {
   width: 100px;
   height: 100px;
-  line-height: 100px;
+  line-height: 80px;
   border: 1px solid #000;
   box-sizing: border-box;
   text-align: center;
-  font-size: 25px;
+  font-size: 80px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
 }
 </style>
 

@@ -3,8 +3,8 @@
     <game-box :boxs="boxs" @handleSelect="handleSelect" />
 
     <div class="result">
-      <span v-if="!isWin">Next Player: {{next===0?'x': 'o'}}</span>
-      <span v-else>Winner: {{next===0?'x': 'o'}}</span>
+      <span v-if="!isWin">Next Player: <span class="winner">{{next===0?'x': 'o'}}</span></span>
+      <span v-else>Winner: <span class="winner">{{next===0?'x': 'o'}}</span></span>
     </div>
 
     <game-steps :steps="steps" @handleReturn="handleReturn" @handleResert="handleResert" />
@@ -116,6 +116,7 @@ export default {
 </script>
 
 <style>
+body{font: 14px "Century Gothic", Futura, sans-serif;}
 #app {
   position: absolute;
   left: 50%;
@@ -125,5 +126,9 @@ export default {
 .result {
   padding: 10px;
   font-size: 24px;
+}
+.winner {
+  font-size: 30px;
+  font-weight: bold;
 }
 </style>
