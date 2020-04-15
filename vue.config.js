@@ -10,7 +10,7 @@ const port = process.env.port || process.env.npm_config_port || 9527 // dev port
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
     // 部署应用包时的基本 URL
-    publicPath: process.env.NODE_ENV === 'production' ? '/vue_game/dist/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-game/dist/' : '/',
     // 输出文件目录
     outputDir: 'dist',
     // 静态资源目录
