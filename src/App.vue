@@ -20,7 +20,7 @@ export default {
   components: { GameBox, GameSteps },
   data() {
     return {
-      boxs: [null, null, null, null, null, null, null, null, null], //視圖顯示‘x’、‘o’
+      boxs: Array(9).fill(null), //視圖顯示‘x’、‘o’
       steps: [], //步驟
       next: 0, //下一步誰下
       isWin: false, //是否勝利
@@ -84,7 +84,7 @@ export default {
     //重新遊戲
     handleResert() {
       this.steps = [];
-      this.boxs = [null, null, null, null, null, null, null, null, null];
+      this.boxs = Array(9).fill(null);
       this.next = 0;
       this.player1 = [];
       this.player2 = [];
